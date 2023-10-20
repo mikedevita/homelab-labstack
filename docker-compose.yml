@@ -51,7 +51,6 @@ services:
       VERDACCIO_USER_UID: ${VERDACCIO_USER_UID}
     volumes:
       - '/mnt/docker/data/verdaccio/storage:/verdaccio/storage'
-      - '/mnt/docker/data/verdaccio/conf:/verdaccio/conf'
 
 
   # GHOST
