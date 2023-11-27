@@ -16,8 +16,10 @@ services:
     environment:
       URL: ${PICTSHARE_URL}
       TITLE: ${PICTSHARE_TITLE}
+      MAX_UPLOAD_SIZE: ${PICTSHARE_MAX_UPLOAD_SIZE}
+      MASTER_DELETE_CODE: ${PICTSHARE_MASTER_DELETE_CODE}
     volumes:
-      - '/mnt/docker/data/pictshare:/usr/share/nginx/html/data'
+      - '/mnt/docker/data/pictshare:/var/www/data'
       
   # HASTEBIN
   # PUBLIC CODE/TEXT BIN HOSTING SERVICE
